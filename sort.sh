@@ -27,7 +27,7 @@ for y in "$@"; do
   fi
   echo "${i}"
   head -1 "$i" >_
-  sed 1d "$i" | sort -Vk2 -k3 -t ',' >>_
+  sed 1d "$i" | sort -Vk2 -k3 -t ',' | uniq >>_
   mv _ "$i"
 done
 echo "done!"
