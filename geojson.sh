@@ -33,7 +33,7 @@ for y in "$@"; do
     exit 1
   fi
   echo "${i} -> ${i//csv/geojson}"
-  jq -srR '
+  jq -srRc '
 
   [split("\n")[1:]|map(split(","))[]|select(.|length==6)]|
   map({
