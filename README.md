@@ -1,6 +1,6 @@
 # hasanmap-dl
 
-<https://www.hasanmap.org> Data Downloader
+<https://www.hasanmap.org> Data Downloader - Japanese Bankrupt People Data Downloader
 
 ## Note
 
@@ -15,7 +15,8 @@ cd hasanmap-dl
 # 1. Get json/{2009..2023}.json, which contains hasan ids
 ./json.sh
 
-# 2. Get csv/{2009..2023}.csv, which contains detailed data of hasan-ed people
+# 2. Get csv/{2009..2023}.csv, which contains detailed data
+# (id, bunkrupt date, bunkrupt person address,bunkrupt person name, lon, lat)
 ./csv.sh <year>
 
 # (optional) Convert csv into geojson
