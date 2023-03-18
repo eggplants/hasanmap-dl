@@ -28,13 +28,13 @@ BASE_URL="https://www.hasanmap.org"
 UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
 
 if [[ "${#years[*]}" = 0 ]]; then
-  echo -n "argument is not given. set '2009-2019' as targetted range? (y[es]/no): "
+  echo -n "argument is not given. set '2009-2023' as targetted range? (y[es]/no): "
   read -r resp
   if ! [[ "$resp" =~ ^(y|yes)$ ]]; then
     echo "$0: abort."
     exit 0
   fi
-  years=({2009..2019})
+  years=({2009..2023})
 fi
 
 echo "[get id-position json]"
