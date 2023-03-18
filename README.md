@@ -1,6 +1,6 @@
-# hasanmap-dl
+# Hasanmap Data Downloader
 
-<https://www.hasanmap.org> Data Downloader - Japanese Bankrupt People Data Downloader
+Japanese Bankrupt People Data Downloader from <https://www.hasanmap.org>
 
 ## Note
 
