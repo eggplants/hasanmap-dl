@@ -80,7 +80,7 @@ for y in "${years[@]}"; do
 
     detail="$(
       curl --retry 3 -A "$UA" -s -m 5 -d "hasan_id=${id}" "${BASE_URL}/api/detail.php" |
-        head -4 | sed '3d;s_</br>__g;s/\r//g' | tr \\n ,
+        head -4 | sed '3d;s_</br>__g;s/\r//g' | sed 'y/,/，/' | tr \\n ,
     )"
     if echo "$detail" | grep -E "X-UA-Compatible|500 Internal Server Error" ||
       [[ "$(echo "${detail}" | grep -o , | wc -l)" != 3 ]]; then
