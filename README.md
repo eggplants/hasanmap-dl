@@ -16,7 +16,12 @@ cd hasanmap-dl
 ./json.sh
 
 # 2. Get csv/{2009..2023}.csv, which contains detailed data
-# (id, bunkrupt date, bunkrupt person address,bunkrupt person name, lon, lat)
+# - id
+# - bunkrupt date
+# - bunkrupt address
+# - bunkrupt name
+# - longitude
+# - latitude
 ./csv.sh <year>
 
 # (optional) Convert csv into geojson
